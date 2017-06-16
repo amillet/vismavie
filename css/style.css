@@ -1,5 +1,5 @@
 body{
-    background:url('/img/bg2.jpg') no-repeat  center bottom;
+    background:url('/img/bg2.jpg') no-repeat  center bottom fixed;
     background-size: cover;
     font-family: 'Roboto', arial;
     min-height: 668px;
@@ -83,4 +83,13 @@ form > .form-group{
 .panel-footer .input-group input{
     padding:20px 10px;
     border:0;
+
+
 }
+header{background: rgba(255,255,255,.7);height:64px;padding:7px 0 10px;text-align:center;}
+header img{
+    max-height:50px;
+    display: inline-block;
+}
+header .menu {float:right; display: block;margin:10px 19px 0 0;}
+header .menu  .glyphicon{ font-size:22px;}

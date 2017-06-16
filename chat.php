@@ -33,7 +33,7 @@
 <div class="row">
     <div class="col-xs-12">
         <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;max-width:90%;margin:auto;">
-            <a href="/index.php?page=wall" target="_blank">Retourner au Mur</a>
+            <a href="/index.php?page=wall" title="">Ma journée commence !</a>
         </center>
     </div>
 </div>

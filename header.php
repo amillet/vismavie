@@ -36,12 +36,3 @@
     </div>
   </div>
 </nav>-->
-
-<nav>
-  <nav class="navbar navbar-default">
-    <div class="navbar-header">
-     <span class="glyphicon glyphicon-menu-hamburger"></span>
-
-    </div>
-  </nav>
-</nav>
