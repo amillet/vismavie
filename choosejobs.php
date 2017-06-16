@@ -10,15 +10,15 @@
         <select class="js-example-basic-multiple form-control" multiple="multiple" style="width:100%;" name="poste">
             <optgroup label="Administration">
                 <option value="9">Directeur général</option>
-                <option value="4">Comptable<option>
-                <option value="5">Assistant de direction<option>
-                <option value="7">Direction administrative<option>
+                <option value="4">Comptable</option>
+                <option value="5">Assistant de direction</option>
+                <option value="7">Direction administrative</option>
             </optgroup>
             <optgroup label="Editorial">
-                <option value="8">Rédacteur web<option>
+                <option value="8">Rédacteur web</option>
             </optgroup>
             <optgroup label="Gestion / management">
-                <option value="6">Chef de produit<option>
+                <option value="6">Chef de produit</option>
                 <option value="2">Chef de projet</option>
             </optgroup>
             <optgroup label="Technique">

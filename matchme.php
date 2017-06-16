@@ -63,7 +63,7 @@
         <br />
         <br />
         <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;">
-            <a href="#">Valider plus tard</a>
+            <a href="?page=wall">Valider plus tard</a>
         </center>
     </div>
 </div>

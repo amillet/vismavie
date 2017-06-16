@@ -1,4 +1,7 @@
 <div class="container" style="padding:0;">
+    <div id="display-input" style="display:none;padding: 10px;background-color:#ffc900">
+        <b>17:00 : </b> Il est temps de nous dire comment se passe votre journée
+    </div>
     <form action="" id="form-msg" style="display: none;">
         <div class="form-group">
             <label for="exampleInputEmail1">Comment se passe votre journée ?</label>
@@ -62,6 +65,15 @@
 </div>
 
 <script type="text/javascript">
+function displayNotification() {
+    var notification = $('#display-input');
+    notification.slideDown(500);
+    notification.click(function() {
+        $(this).remove();
+        $('#form-msg').slideDown(500);
+    });
+}
+
 $('#btn-submit').click(function(event) {
     event.preventDefault();
     var li = $("#msg-proto").clone();
@@ -71,8 +83,8 @@ $('#btn-submit').click(function(event) {
     });
 });
 setTimeout(function() {
-    $('#form-msg').slideDown(500);
-}, 2000);
+    displayNotification();
+}, 4000);
 </script>
 
 <style type="text/css">
