@@ -107,8 +107,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    border-bottom: 1px solid #333;
-    border-top: 1px solid #333;
 }
 .navigation li {
     float: left;
