@@ -8,7 +8,7 @@
     </form>
     <ul class="timeline" id="timeline">
         <li>
-            <div class="timeline-badge"><img src=""></div>
+            <div class="timeline-badge"><img src="/img/2.jpg"></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
@@ -21,7 +21,7 @@
             </div>
         </li>
         <li>
-            <div class="timeline-badge"><img src=""></div>
+            <div class="timeline-badge"><img src="/img/2.jpg"></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
@@ -33,7 +33,7 @@
             </div>
         </li>
         <li style="display:none" id="msg-proto">
-            <div class="timeline-badge"><img src=""></div>
+            <div class="timeline-badge"><img src="/img/2.jpg"></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
@@ -57,9 +57,6 @@ $('#btn-submit').click(function(event) {
 setTimeout(function() {
     $('#form-msg').slideDown(500);
 }, 2000);
-/*setTimeout(function() {
-    $('#timeline > li:first').slideDown(500);
-}, 2000);*/
 </script>
 
 <style type="text/css">
@@ -142,8 +139,10 @@ setTimeout(function() {
         top: 16px;
         left: 0px;
         margin-right: -25px;
-        background-color: #999999;
         z-index: 100;
+    }
+    .timeline > li > .timeline-badge > img {
+        width: 100%;
         border-top-right-radius: 50%;
         border-top-left-radius: 50%;
         border-bottom-right-radius: 50%;
