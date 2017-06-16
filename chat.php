@@ -21,7 +21,7 @@
                     <div class="input-group">
                         <input id="btn-input" type="text" class="form-control input-sm" placeholder="Saisissez votre message ici..." />
                         <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm" id="btn-chat">Envoyer</button>
+                            <button class="btn btn-warning btn-sm" id="btn-chat" style="color: #333;background: #ccc;border:0;height: 40px;font-size:16px;"><span class="glyphicon glyphicon-send"></span></button>
                             </span>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
 <div class="row">
     <div class="col-xs-12">
         <center style="padding:15px 20px 20px;max-width:90%;margin:auto;">
-            <a href="/index.php?page=wall" title="" class="btn btn-primary" style="font-weight:500;color:#333;background:#ffc900;">Ma journée commence !</a>
+            <a href="/index.php?page=wall" title="" class="btn btn-primary" style="padding:16px 20px;font-weight:500;color:#333;background:#ffc900;"> Ma journée commence !</a>
         </center>
     </div>
 </div>
