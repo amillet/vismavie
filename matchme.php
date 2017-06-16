@@ -42,20 +42,20 @@
                 <p style="color:#000;margin-bottom:5px;"><b><?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom'] ?></b></p>
             </div>
         </div>
-        <div class="col-xs-7">
+        <div class="col-xs-7" id="match">
             <div class="col-xs-12 text-center">
                 <img id="match_img" src="/img/<?php echo $match['image']; ?>" width="135" height="135" style="border-radius: 100%;box-shadow: 1px 2px 4px rgba(0,0,0,0.3);" />
                 <br />
                 <br />
-                <p id="match_name" style="color:#000;margin-bottom:5px;height:20px;"></p>
-                <p id="match_job" style="height:40px;"></p>
+                <p id="match_name" style="color:#000;margin-bottom:5px;height:20px;"><b><?php echo $match['prenom'] . ' ' . $match['nom']; ?></b></p>
+                <p id="match_job" style="height:40px;"><?php echo $jobsList[$match['poste']]; ?><br />(<?php echo $match['bu']; ?>)</p>
             </div>
         </div>
         <br style="clear:both;"/>
     </div>
 </div>
 <br />
-<div class="row">
+<div id="btn-bt" class="row" style="display:none;">
     <div class="col-xs-12">
         <center>
             <a href="index.php?page=chat" title="" class="btn btn-primary">On discute ?</a>
@@ -68,26 +68,12 @@
         </center>
     </div>
 </div>
-
-<script type="text/javascript" src="/js/typed.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function(){
-      Typed.new('#match_name', {
-        strings: ["<b><?php echo $match['prenom'] . ' ' . $match['nom']; ?></b>"],
-        typeSpeed: 10,
-        showCursor: false,
-        contentType: 'html',
-        callback: function() {
-            Typed.new('#match_job', {
-                strings: ["<?php echo $jobsList[$match['poste']]; ?><br />(<?php echo $match['bu']; ?>)"],
-                typeSpeed: 10,
-                showCursor: false,
-                contentType: 'html',
-                callback: function() {
-
-                },
-            });
-        },
+      $('#match').effect('slide', {direction: 'right'}, 500, function() {
+            $('#btn-bt').fadeIn(500);
       });
   });
 </script>
