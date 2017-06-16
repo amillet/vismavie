@@ -3,11 +3,10 @@
 
 <h1>Je veux découvrir...</h1>
 
-<form action="index.php?page=..." method="post" style="text-align:center;">
+<form action="index.php?page=matchme" method="post" style="text-align:center;">
     <br />
     <div class="form-group">
-        <!--<label for="exampleInputEmail1">...</label>-->
-        <select class="js-example-basic-multiple" multiple="multiple" class="form-control" style="width: 100%;">
+        <select class="js-example-basic-multiple" multiple="multiple" class="form-control" style="width: 100%;" name="poste">
             <option value="1">Développeur</option>
             <option value="2">Chef de projet</option>
             <option value="3">Intégrateur</option>
