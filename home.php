@@ -40,12 +40,9 @@
 </form>
 
 <hr />
-<<<<<<< HEAD
-<a href="#" class="btn btn-default">Connexion</a>
-=======
+
 <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;">
     <h2>Déja inscrit ?</h2>
     <br />
     <a href="" title="">Me connecter</a>
 </center>
->>>>>>> creat
