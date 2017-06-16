@@ -8,15 +8,15 @@
     </form>
     <ul class="timeline" id="timeline">
         <li>
-            <div class="timeline-badge"><img src="/img/2.jpg"></div>
+            <div class="timeline-badge"><img src="/img/3.jpg"></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 15 minutes</small></p>
+                    <p>Najla AMERE <small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 10h</small></p>
                 </div>
                 <div class="timeline-body">
-                    <img src="http://www.communicationpsycom.com/wp-content/uploads/2014/09/img-entreprise-organisation-1000x500.jpg" class="img-rounded" style="width: 100%;">
-                    <p>...</p>
+                    <!--<img src="http://www.communicationpsycom.com/wp-content/uploads/2014/09/img-entreprise-organisation-1000x500.jpg" class="img-rounded" style="width: 100%;">-->
+                    <p>Une journée avec Louise, juriste je comprends mieux pourquoi les petites lignes ça compte ;)</p>
                 </div>
             </div>
         </li>
@@ -25,10 +25,26 @@
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 30 minutes</small></p>
+                    <p>Dounia IDHMIDA‎ <small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 7h</small></p>
                 </div>
                 <div class="timeline-body">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/GNYa0O8VYRg" frameborder="0" allowfullscreen></iframe>
+                    <video width="100%" controls muted>
+                       <source src="img/hack.mp4" type="video/mp4" autoplay="0">
+                    </video>
+                    <br /><br />
+                    <p>Les techos sont les meilleurs !</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-badge"><img src="/img/4.jpg"></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
+                    <p>Morgane MATHILLON <small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 5 jours</small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Un petit tour au service commercial avec Mélaine afin de mieux comprendre toutes les offres !</p>
                 </div>
             </div>
         </li>
