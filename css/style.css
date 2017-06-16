@@ -26,7 +26,9 @@ h1,h2,h2{
     color:#333;
 }
 .container form .form-group{text-align: left!important;}
-.container button{
+.container button,
+.btn.btn-primary{
+    display:inline-block;
     background:#333;
     color:#fff;
     border-radius:0;
@@ -34,6 +36,8 @@ h1,h2,h2{
     padding:10px 30px;
     text-transform: uppercase;
     font-weight:500;
+    text-decoration: none;
+    margin:0 auto;
 
 }
 .container button:hover,
@@ -50,3 +54,4 @@ form > .form-group{
     display:inline-block;
     width:40%;
 }
+
