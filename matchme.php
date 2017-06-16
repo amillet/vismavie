@@ -68,3 +68,19 @@
     </div>
 </div>
 
+<script type="text/javascript">
+function rotate(degrees) {
+    console.log(degrees);
+    $('#user2').css({
+    '-webkit-transform' : 'rotate('+degrees+'deg)',
+     '-moz-transform' : 'rotate('+degrees+'deg)',
+      '-ms-transform' : 'rotate('+degrees+'deg)',
+       '-o-transform' : 'rotate('+degrees+'deg)',
+          'transform' : 'rotate('+degrees+'deg)',
+               'zoom' : 1
+
+    });
+}
+var degree = 0;
+setInterval(function() { rotate(++degree); }, 1);
+</script>

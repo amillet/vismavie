@@ -33,7 +33,7 @@
 <div class="row">
     <div class="col-xs-12">
         <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;max-width:90%;margin:auto;">
-            <a href="#">Retourner au Mur</a>
+            <a href="/index.php?page=wall" target="_blank">Retourner au Mur</a>
         </center>
     </div>
 </div>
@@ -58,7 +58,7 @@ function pushMsgRight(msg) {
         + '<div class="chat-body clearfix">'
         + '    <div class="header">'
         + '        <small class=" text-muted"><span class="glyphicon"></span></small>'
-        + '        <strong class="pull-right primary-font">Bhaumik Patel</strong>'
+        + '        <strong class="pull-right primary-font"><?php echo isset($_SESSION['prenom']) ? $_SESSION['prenom'] : ''; ?></strong>'
         + '    </div>'
         + '    <p>'+msg+'</p>'
         + '</div>'
