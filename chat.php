@@ -65,12 +65,16 @@ function pushMsgRight(msg) {
         + '</li>';
     $('#msg').append(msg);
 }
+var c = 0;
 $('#btn-chat').click(function(){
     pushMsgRight($('#btn-input').val());
+    c++;
     $('#btn-input').val('');
-    setTimeout(function() {
-        pushMsgLeft('votre démo se passe bien ?');
-    }, 1500);
+    if(c == 1) {
+        setTimeout(function() {
+            pushMsgLeft('votre démo se passe bien ?');
+        }, 1750);
+    }
 });
 
 setTimeout(function() {
