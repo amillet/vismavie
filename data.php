@@ -1,6 +1,17 @@
 <?php
     $users = array(
         array(
+            'prenom' => 'David',
+            'nom' => 'BITTON',
+            'bu' => 'MyBestPro',
+            'poste' => 9,//Directeur général
+            'image' => '1.jpg',
+            'envies' => array(
+                6,//Chef de produit
+                1
+            )
+        ),
+        array(
             'prenom' => 'Laurent',
             'nom' => 'Garcia',
             'bu' => 'RDVMedicaux',
@@ -17,17 +28,6 @@
             'poste' => 3,
             'image' => 'hani.jpg',
             'envies' => array(
-                1
-            )
-        ),
-        array(
-            'prenom' => 'David',
-            'nom' => 'BITTON',
-            'bu' => 'MyBestPro',
-            'poste' => 9,//Directeur général
-            'image' => '1.jpg',
-            'envies' => array(
-                6,//Chef de produit
                 1
             )
         )

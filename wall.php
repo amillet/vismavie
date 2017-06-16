@@ -1,20 +1,15 @@
 <div class="container" style="padding:0;">
-
-    <!--<?php if(!($_SESSION['match_chat'])) : ?>-->
+    <?php if(!($_SESSION['match_chat'])) : ?>
         <div id="chat-button" class="col-xs-12">
             <a href="index.php?page=chat">
-                <img src="img/1.jpg" style="border-radius:100%; position:fixed;top:90px;right:-15px; z-index:999; width:75px; height:75px;box-shadow: 0px 0px 5px 1px rgba(0,0,0,.1);"/>
+                <img src="img/<?php echo $_SESSION['match']['image']; ?>" style="border-radius:100%; position:fixed;top:90px;right:-15px; z-index:999; width:75px; height:75px;box-shadow: 0px 0px 5px 1px rgba(0,0,0,.1);"/>
             </a>
         </div>
-    <!--<?php endif; ?> <?php echo $_SESSION['match']['image']; ?>-->
-
-    <!--
+    <?php endif; ?>
     <div id="display-input" style="display:none;padding:20px;background:#ffc900;margin-top:10px;box-shadow:1px 1px 5px rgba(0,0,0,.3);">
         <img src="img/mbp.png" width="40" alt="" style="float:left;margin:0 10px 20px 0;"/>
         <b style="font-size:16px;color:#333;">17:00 !</b> Il est temps de nous dire comment se passe votre journée... <br /><span style="text-decoration:underline;">Poster un commentaire<span>
     </div>
-
--->
 
     <form action="" id="form-msg" style="display: none;">
         <div class="form-group">
