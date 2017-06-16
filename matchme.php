@@ -20,26 +20,26 @@
 ?>
 
 <div class="row">
-    <h1 class="text-center">It's match !</h1>
+    <h1 class="text-center">Je suis votre paire !</h1>
 </div>
 <br />
 <br />
 <div class="row matching">
     <div class="col-xs-12">
-        <div class="col-xs-6">
-            <div class="col-xs-12 text-center">
-                <img src="/img/2.jpg" width="110" height="110" style="border-radius: 100%;box-shadow: 1px 2px 3px rgba(0,0,0,0.3)"/>
+        <div class="col-xs-5">
+            <div class="text-center">
+                <img src="/img/2.jpg" width="80" height="80" style="border-radius: 100%;box-shadow: 1px 1px 1px rgba(0,0,0,0.3)"/>
                 <br />
                 <br />
                 <p style="color:#000;margin-bottom:5px;"><b>Dounia IDHMIDA</b></p>
-                <p>Chef produit<br />(Bordas)</p>
+                <!--<p>Chef produit<br />(Bordas)</p>
                 <?php //echo $_SESSION['prenom'] . ' ' . $_SESSION['nom'] ?>
-                <?php //echo $_SESSION['poste'] ?>
+                <?php //echo $_SESSION['poste'] ?>-->
             </div>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-7">
             <div class="col-xs-12 text-center">
-                <img src="/img/1.jpg" width="110" height="110" style="border-radius: 100%;box-shadow: 1px 2px 3px rgba(0,0,0,0.3)"/>
+                <img src="/img/1.jpg" width="135" height="135" style="border-radius: 100%;box-shadow: 1px 2px 4px rgba(0,0,0,0.3)"/>
                 <br />
                 <br />
                 <p style="color:#000;margin-bottom:5px;"><b>David BITTON</b></p>
@@ -50,7 +50,6 @@
         <br style="clear:both;"/>
     </div>
 </div>
-<br />
 <br />
 <div class="row">
     <div class="col-xs-12">

@@ -1,10 +1,16 @@
-<h1>Chat</h1>
+<!--<h1>Chat</h1>-->
+
+<div class="davidbitton">
+    <p>Vous discutez avec :</p>
+    <img src="img/1.jpg" alt="" />
+    <h1 style="display: inline-block;">David Bitton</h1>
+</div>
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-primary">
-            <div class="panel-heading" id="accordion">
+            <!--<div class="panel-heading" id="accordion">
                 <span class="glyphicon glyphicon-comment"></span> Chat
-            </div>
+            </div>-->
             <div class="panel-collapse" id="collapseOne">
                 <div class="panel-body">
                     <ul class="chat" id ="msg"></ul>
@@ -13,8 +19,7 @@
                     <div class="input-group">
                         <input id="btn-input" type="text" class="form-control input-sm" placeholder="Saisissez votre message ici..." />
                         <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm" id="btn-chat">
-                                Envoyer</button>
+                            <button class="btn btn-warning btn-sm" id="btn-chat">Envoyer</button>
                             </span>
                         </div>
                     </div>
@@ -23,15 +28,24 @@
         </div>
     </div>
 </div>
-
+<br />
+<br />
+<div class="row">
+    <div class="col-xs-12">
+        <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;max-width:90%;margin:auto;">
+            <a href="#" target="_blank">Retourner au Mur</a>
+        </center>
+    </div>
+</div>
+<!--<img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />-->
 <script type="text/javascript">
 function pushMsgLeft(msg) {
     var msg = '<li class="left clearfix">'
-        + '<span class="chat-img pull-left"><img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" /></span>'
+        + '<span class="chat-img pull-left glyphicon glyphicon-user glyphicon"></span>'
         + '<div class="chat-body clearfix">'
         + '    <div class="header">'
         + '        <strong class="primary-font">David</strong> <small class="pull-right text-muted">'
-        + '        <span class="glyphicon glyphicon-time"></span>...</small>'
+        + '        </small>'
         + '    </div>'
         + '    <p>'+msg+'</p>'
         + '</div>'
@@ -40,10 +54,10 @@ function pushMsgLeft(msg) {
 }
 function pushMsgRight(msg) {
     var msg = '<li class="right clearfix">'
-        + '<span class="chat-img pull-right"><img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" /></span>'
+        + '<span class="chat-img pull-right glyphicon glyphicon-user glyphicon" style="color:#ffc900;"> </span>'
         + '<div class="chat-body clearfix">'
         + '    <div class="header">'
-        + '        <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>...</small>'
+        + '        <small class=" text-muted"><span class="glyphicon"></span></small>'
         + '        <strong class="pull-right primary-font">Bhaumik Patel</strong>'
         + '    </div>'
         + '    <p>'+msg+'</p>'
@@ -81,12 +95,12 @@ setTimeout(function() {
 
 .chat li.left .chat-body
 {
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .chat li.right .chat-body
 {
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 
@@ -103,7 +117,7 @@ setTimeout(function() {
 
 .panel-body
 {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 320px;
 }
 

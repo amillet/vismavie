@@ -12,6 +12,11 @@ a:hover{
     color: #000;
 }
 
+
+.navbar{
+margin-bottom:10px!important;
+}
+
 .container{
     max-width:460px;
 }
@@ -55,3 +60,27 @@ form > .form-group{
     width:40%;
 }
 
+
+.davidbitton{
+    padding:10px;
+    box-sizing:border-box;
+}
+.davidbitton img{border-radius:100%;width:30px;display:inline-block;}
+.davidbitton h1{margin:0;font-size:18px;font-weight: 400;margin-left:5%;}
+
+.panel-primary{
+    margin-top:10px;
+    border:0;
+    border-radius: 0;
+    background: none;
+}
+.panel-body{background-color:rgba(255,255,255,.8);}
+.panel-footer{
+    background: none;
+    padding:0;
+    margin-top:10px;
+}
+.panel-footer .input-group input{
+    padding:20px 10px;
+    border:0;
+}
