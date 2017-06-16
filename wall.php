@@ -38,11 +38,11 @@
             </div>
         </li>
         <li>
-            <div class="timeline-badge"><img src="/img/2.jpg"></div>
+            <div class="timeline-badge"><a href="/index.php?page=profile"><img src="/img/2.jpg"></a></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
-                    <p>Dounia IDHMIDA‎ <small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 7h</small></p>
+                    <p><a href="/index.php?page=profile">Dounia IDHMIDA‎</a> <small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 7h</small></p>
                 </div>
                 <div class="timeline-body">
                     <video width="100%" controls muted>
@@ -66,7 +66,7 @@
             </div>
         </li>
         <li style="display:none" id="msg-proto">
-            <div class="timeline-badge"><img src="/img/2.jpg"></div>
+            <div class="timeline-badge"><a href="/index.php?page=profile"><img src="/img/2.jpg"></a></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
@@ -122,6 +122,9 @@ setTimeout(function() {
     .timeline > li {
         margin-bottom: 20px;
         position: relative;
+    }
+    .timeline > li a {
+        text-decoration: none;
     }
     .timeline > li:before,
     .timeline > li:after {
@@ -185,6 +188,7 @@ setTimeout(function() {
         margin-right: -25px;
         z-index: 100;
     }
+    .timeline > li > .timeline-badge > a > img,
     .timeline > li > .timeline-badge > img {
         width: 100%;
         border-top-right-radius: 50%;
