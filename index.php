@@ -1,5 +1,7 @@
 <?php
-//session_start();
+session_start();
+include('data.php');
+
 $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 'home';
 ?><!DOCTYPE html>
 <html lang="en">
