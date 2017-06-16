@@ -33,7 +33,7 @@
 <div class="row">
     <div class="col-xs-12">
         <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;max-width:90%;margin:auto;">
-            <a href="#" target="_blank">Retourner au Mur</a>
+            <a href="#">Retourner au Mur</a>
         </center>
     </div>
 </div>

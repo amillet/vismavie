@@ -57,13 +57,13 @@
 <div class="row">
     <div class="col-xs-12">
         <center>
-            <a href="index.php?page=chat" title="" target="_blank" class="btn btn-primary">On discute ?</a>
+            <a href="index.php?page=chat" title="" class="btn btn-primary">On discute ?</a>
         </center>
         <br />
         <br />
         <br />
         <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;">
-            <a href="#" target="_blank">Valider plus tard</a>
+            <a href="#">Valider plus tard</a>
         </center>
     </div>
 </div>
