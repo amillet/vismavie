@@ -93,3 +93,18 @@ header img{
 }
 header .menu {float:right; display: block;margin:10px 19px 0 0;}
 header .menu  .glyphicon{ font-size:22px;}
+
+
+#chat-button a:after{
+    display:block;
+    content:'';
+    background:red;
+    width:12px;
+    height:12px;
+    border-radius:100%;
+    top:97px;
+    right:45px;
+    position:fixed;
+    z-index:999;
+
+}
