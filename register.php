@@ -10,8 +10,7 @@
             <input type="text" class="form-control" id="nom" placeholder="Nom" name="inscription[nom]">
         </div>
     </div>
-
-    <div class="form-group" style="margin-top:25px;">
+    <div class="form-group" style="margin-top:5px;">
         <select class="form-control" name="inscription[poste]">
             <optgroup label="Administration">
             <option value="9">Directeur général</option>
@@ -39,16 +38,15 @@
         </select>
     </div>
     <div class="form-group" style="margin-top:20px;">
-        <img style="margin-right:5px;" src="img/mbp.png" alt="" width="60"/>
+        <img style="margin-right:5px;" src="img/mbp.png" alt="" width="40"/>
         <label for="photo" style="color:#000;font-weight: 500;">Une petite photo ?</label>
-        <input type="file" id="photo" name="inscription[image]">
+        <input type="file" id="photo" name="inscription[image]" style="display:none;">
     </div>
-
-    <button type="submit" class="btn btn-default" style="margin-top:10px;">Créer</button>
+    <button type="submit" class="btn btn-default" style="margin-top:5px;">Créer</button>
 </form>
 <br />
 <center style="background:rgba(255,255,255,0.5);padding:10px 20px 20px;">
-    <h2>Déja inscrit ?</h2>
+    <h2 style="margin-top:10px;margin-bottom:0;font-size:28px;">Déja inscrit ?</h2>
     <br />
     <a href="" title="">Me connecter</a>
 </center>

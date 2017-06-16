@@ -32,14 +32,9 @@ if($page === 'signup') {
   </head>
 
   <body>
-
-  <header>
-      <img src="img/logo.png" alt="" />
-      <a href="#" class="menu" title=""><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-  </header>
-
+    <?php include('header.php') ?>
     <div class="container">
-      <?php include('header.php') ?>
+
 
       <?php include($page.'.php') ?>
 
