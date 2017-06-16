@@ -30,12 +30,11 @@
         </div>
     </div>
 </div>
-<br />
-<br />
+
 <div class="row">
     <div class="col-xs-12">
-        <center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;max-width:90%;margin:auto;">
-            <a href="/index.php?page=wall" title="">Ma journée commence !</a>
+        <center style="padding:15px 20px 20px;max-width:90%;margin:auto;">
+            <a href="/index.php?page=wall" title="" class="btn btn-primary" style="font-weight:500;color:#333;background:#ffc900;">Ma journée commence !</a>
         </center>
     </div>
 </div>
@@ -127,7 +126,7 @@ setTimeout(function() {
 .panel-body
 {
     overflow-y: auto;
-    height: 320px;
+    height: 225px;
 }
 
 ::-webkit-scrollbar-track
