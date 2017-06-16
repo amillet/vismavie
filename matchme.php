@@ -43,11 +43,11 @@
         </div>
         <div class="col-xs-7">
             <div class="col-xs-12 text-center">
-                <img src="/img/<?php echo $match['image']; ?>" width="135" height="135" style="border-radius: 100%;box-shadow: 1px 2px 4px rgba(0,0,0,0.3)"/>
+                <img id="match_img" src="/img/<?php echo $match['image']; ?>" width="135" height="135" style="border-radius: 100%;box-shadow: 1px 2px 4px rgba(0,0,0,0.3);filter:blur(50px);" />
                 <br />
                 <br />
-                <p style="color:#000;margin-bottom:5px;"><b><?php echo $match['prenom'] . ' ' . $match['nom']; ?></b></p>
-                <p><?php echo $jobsList[$match['poste']]; ?><br />(<?php echo $match['bu']; ?>)</p>
+                <p id="match_name" style="color:#000;margin-bottom:5px;height:20px;"></p>
+                <p id="match_job" style="height:40px;"></p>
             </div>
         </div>
         <br style="clear:both;"/>
@@ -67,3 +67,31 @@
         </center>
     </div>
 </div>
+
+<script type="text/javascript" src="/js/typed.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('#match_name', {
+        strings: ["<b><?php echo $match['prenom'] . ' ' . $match['nom']; ?></b>"],
+        typeSpeed: 10,
+        showCursor: false,
+        contentType: 'html',
+        callback: function() {
+            Typed.new('#match_job', {
+                strings: ["<?php echo $jobsList[$match['poste']]; ?><br />(<?php echo $match['bu']; ?>)"],
+                typeSpeed: 10,
+                showCursor: false,
+                contentType: 'html',
+                callback: function() {
+
+                },
+            });
+        },
+      });
+      var i = 5;
+      setInterval(function() {
+        i--;
+        $('#match_img').css('filter', 'blur(' + i + 'px)');
+      }, 100);
+  });
+</script>
