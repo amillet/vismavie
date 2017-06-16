@@ -31,4 +31,4 @@
 </form>
 
 <hr />
-<button class="btn btn-default">Inscription</button>
+<a href="#" class="btn btn-default">Connexion</a>
