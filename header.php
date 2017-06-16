@@ -1,6 +1,6 @@
 <!-- Static navbar -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+<!--<nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -33,6 +33,15 @@
         <li><a href="../navbar-static-top/">Static top</a></li>
         <li><a href="../navbar-fixed-top/">Fixed top</a></li>
       </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container-fluid -->
+    </div>
+  </div>
+</nav>-->
+
+<nav>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+     <span class="glyphicon glyphicon-menu-hamburger"></span>
+
+    </div>
+  </nav>
 </nav>
