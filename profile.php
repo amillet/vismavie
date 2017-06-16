@@ -114,7 +114,7 @@
     padding: 0;
 }
 .navigation li a {
-    padding: 20px 30px;
+    padding: 20px 28px;
     float: left;
 }
 .navigation li.active a {
