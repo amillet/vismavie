@@ -1,6 +1,13 @@
 <div class="container">
+    <form action="" id="form-msg" style="display: none;">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Comment se passe votre journée ?</label>
+            <textarea id="btn-msg" class="form-control" placeholder="Ecrivez quelque chose"></textarea>
+        </div>
+        <button id="btn-submit" type="submit" class="btn btn-default">Envoyer</button>
+    </form>
     <ul class="timeline" id="timeline">
-        <li style="display: none;">
+        <li>
             <div class="timeline-badge"><img src=""></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -25,25 +32,33 @@
                 </div>
             </div>
         </li>
-        <li>
+        <li style="display:none" id="msg-proto">
             <div class="timeline-badge"><img src=""></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 45 minutes</small></p>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> à l'instant</small></p>
                 </div>
-                <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                </div>
+                <div class="timeline-body"></div>
             </div>
         </li>
     </ul>
 </div>
 
 <script type="text/javascript">
+$('#btn-submit').click(function(event) {
+    event.preventDefault();
+    var li = $("#msg-proto").clone();
+    li.find('.timeline-body').html($('#btn-msg').val());
+    li.prependTo('#timeline').fadeIn(500);
+    $('#form-msg').slideUp(500);
+});
 setTimeout(function() {
-    $('#timeline > li:first').slideDown(500);
+    $('#form-msg').slideDown(500);
 }, 2000);
+/*setTimeout(function() {
+    $('#timeline > li:first').slideDown(500);
+}, 2000);*/
 </script>
 
 <style type="text/css">
