@@ -1,8 +1,8 @@
-
 body{
-    background:url('/img/bg.jpg') no-repeat center center;
-    background-size: 375%;
+    background:url('/img/bg2.jpg') no-repeat  center bottom;
+    background-size: cover;
     font-family: 'Roboto', arial;
+    min-height: 668px;
 }
 a, a:link{
     text-decoration: underline;
