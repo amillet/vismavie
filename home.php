@@ -1,8 +1,34 @@
-<!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-      </div>
+<form method="POST" action="signup.php">
+    <div class="form-group">
+        <label for="prenom"></label>
+        <input type="text" class="form-control" id="prenom" placeholder="Prénom" name="inscription[prenom]">
+    </div>
+    <div class="form-group">
+        <label for="nom"></label>
+        <input type="text" class="form-control" id="nom" placeholder="Nom" name="inscription[nom]">
+    </div>
+    <div class="form-group">
+        <label for="businessUnit">Business Unit</label>
+        <select class="form-control" id="businessUnit" name="inscription[bu]">
+            <option value="Wengo">Wengo</option>
+            <option value="Juritravail">Juritravail</option>
+            <option value="RDVMedicaux">RDVMedicaux</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="poste">Poste</label>
+        <select class="form-control" id="poste" name="inscription[poste]">
+            <option value="Développeur">Développeur</option>
+            <option value="Intégrateur">Intégrateur</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="photo">Photo de profil</label>
+        <input type="file" id="photo" name="inscription[photo]">
+    </div>
+
+    <input type="submit" class="btn btn-default" value="OK">
+</form>
+
+<hr />
+<button class="btn btn-default">Inscription</button>

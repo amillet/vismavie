@@ -1,4 +1,5 @@
 <?php
+session_start();
 $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 'home';
 ?><!DOCTYPE html>
 <html lang="en">
