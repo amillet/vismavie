@@ -44,7 +44,7 @@ function pushMsgLeft(msg) {
         + '<span class="chat-img pull-left glyphicon glyphicon-user glyphicon"></span>'
         + '<div class="chat-body clearfix">'
         + '    <div class="header">'
-        + '        <strong class="primary-font">David</strong> <small class="pull-right text-muted">'
+        + '        <strong class="primary-font"><?php echo $_SESSION['match']['prenom']; ?></strong> <small class="pull-right text-muted">'
         + '        </small>'
         + '    </div>'
         + '    <p>'+msg+'</p>'
@@ -58,7 +58,7 @@ function pushMsgRight(msg) {
         + '<div class="chat-body clearfix">'
         + '    <div class="header">'
         + '        <small class=" text-muted"><span class="glyphicon"></span></small>'
-        + '        <strong class="pull-right primary-font"><?php echo isset($_SESSION['prenom']) ? $_SESSION['prenom'] : ''; ?></strong>'
+        + '        <strong class="pull-right primary-font"><?php echo $_SESSION['prenom']; ?></strong>'
         + '    </div>'
         + '    <p>'+msg+'</p>'
         + '</div>'
@@ -68,6 +68,9 @@ function pushMsgRight(msg) {
 $('#btn-chat').click(function(){
     pushMsgRight($('#btn-input').val());
     $('#btn-input').val('');
+    setTimeout(function() {
+        pushMsgLeft('votre démo se passe bien ?');
+    }, 1500);
 });
 
 setTimeout(function() {

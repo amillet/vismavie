@@ -1,4 +1,4 @@
-<form method="POST" action="signup.php"  style="text-align:center;">
+<form method="POST" action="index.php?page=signup"  style="text-align:center;">
 <h1 style="margin-top:-10px;">Créer votre profil</h1>
     <div class="form_1" >
         <div class="form-group">

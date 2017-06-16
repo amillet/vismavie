@@ -3,6 +3,10 @@ session_start();
 include('data.php');
 
 $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 'home';
+
+if($page === 'signup') {
+    include($page.'.php');
+}
 ?><!DOCTYPE html>
 <html lang="en">
   <head>
