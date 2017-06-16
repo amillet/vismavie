@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="padding:0;">
     <form action="" id="form-msg" style="display: none;">
         <div class="form-group">
             <label for="exampleInputEmail1">Comment se passe votre journée ?</label>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="timeline-body">
                     <img src="http://www.communicationpsycom.com/wp-content/uploads/2014/09/img-entreprise-organisation-1000x500.jpg" class="img-rounded" style="width: 100%;">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    <p>...</p>
                 </div>
             </div>
         </li>
