@@ -11,7 +11,7 @@
             <div class="timeline-badge"><img src=""></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
                     <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> à l'instant</small></p>
                 </div>
                 <div class="timeline-body">
@@ -24,7 +24,7 @@
             <div class="timeline-badge"><img src=""></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
                     <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 30 minutes</small></p>
                 </div>
                 <div class="timeline-body">
@@ -36,7 +36,7 @@
             <div class="timeline-badge"><img src=""></div>
             <div class="timeline-panel">
                 <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
                     <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> à l'instant</small></p>
                 </div>
                 <div class="timeline-body"></div>
@@ -50,8 +50,9 @@ $('#btn-submit').click(function(event) {
     event.preventDefault();
     var li = $("#msg-proto").clone();
     li.find('.timeline-body').html($('#btn-msg').val());
-    li.prependTo('#timeline').fadeIn(500);
-    $('#form-msg').slideUp(500);
+    $('#form-msg').slideUp(1000, function() {
+        li.prependTo('#timeline').fadeIn(1000);
+    });
 });
 setTimeout(function() {
     $('#form-msg').slideDown(500);
