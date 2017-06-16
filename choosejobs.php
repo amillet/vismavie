@@ -17,7 +17,7 @@
 
 
 <script type="text/javascript">
-    $(".js-example-basic-multiple").select2({
-  theme: "classic"
+$(".js-example-basic-multiple").select2({
+    theme: "classic"
 });
 </script>
