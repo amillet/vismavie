@@ -12,7 +12,7 @@
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <!--<h4 class="timeline-title">Mussum ipsum cacilds</h4>-->
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> à l'instant</small></p>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> il y a 15 minutes</small></p>
                 </div>
                 <div class="timeline-body">
                     <img src="http://www.communicationpsycom.com/wp-content/uploads/2014/09/img-entreprise-organisation-1000x500.jpg" class="img-rounded" style="width: 100%;">
@@ -50,7 +50,7 @@ $('#btn-submit').click(function(event) {
     event.preventDefault();
     var li = $("#msg-proto").clone();
     li.find('.timeline-body').html($('#btn-msg').val());
-    $('#form-msg').slideUp(1000, function() {
+    $('#form-msg').fadeOut(1000, function() {
         li.prependTo('#timeline').fadeIn(1000);
     });
 });
