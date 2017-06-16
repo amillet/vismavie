@@ -38,20 +38,16 @@
             <option value="Wengo">Wengo</option>
         </select>
     </div>
-
-    <div class="form-group" style="margin-top:35px;">
-        <label for="photo" style="font-weight: 400;">Une petite photo ?</label>
+    <div class="form-group" style="margin-top:20px;">
+        <img style="margin-right:5px;" src="img/mbp.png" alt="" width="60"/>
+        <label for="photo" style="color:#000;font-weight: 500;">Une petite photo ?</label>
         <input type="file" id="photo" name="inscription[image]">
     </div>
 
-    <br />
-
-    <button type="submit" class="btn btn-default">Créer</button>
+    <button type="submit" class="btn btn-default" style="margin-top:10px;">Créer</button>
 </form>
-
-<hr />
-
-<center style="background:rgba(255,255,255,0.5);padding:15px 20px 20px;">
+<br />
+<center style="background:rgba(255,255,255,0.5);padding:10px 20px 20px;">
     <h2>Déja inscrit ?</h2>
     <br />
     <a href="" title="">Me connecter</a>
