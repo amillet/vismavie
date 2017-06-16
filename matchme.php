@@ -44,7 +44,7 @@
         </div>
         <div class="col-xs-7">
             <div class="col-xs-12 text-center">
-                <img id="match_img" src="/img/<?php echo $match['image']; ?>" width="135" height="135" style="border-radius: 100%;box-shadow: 1px 2px 4px rgba(0,0,0,0.3);" class="rotate" />
+                <img id="match_img" src="/img/<?php echo $match['image']; ?>" width="135" height="135" style="border-radius: 100%;box-shadow: 1px 2px 4px rgba(0,0,0,0.3);" />
                 <br />
                 <br />
                 <p id="match_name" style="color:#000;margin-bottom:5px;height:20px;"></p>
@@ -91,19 +91,3 @@
       });
   });
 </script>
-
-<style type="text/css">
-.rotate {
-    background-color: green;
-    -webkit-animation: spin 2s linear;
-}
-
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    10% { -webkit-transform: rotate(360deg); }
-    20% { -webkit-transform: rotate(720deg); }
-    40% { -webkit-transform: rotate(1080deg); }
-    70% { -webkit-transform: rotate(1440deg); }
-    100% { -webkit-transform: rotate(1800deg); }
-}
-</style>
