@@ -8,3 +8,10 @@ body{
 
 .navbar.navbar-default,
 .jumbotron{background: none;border:0;}
+
+
+
+button{
+    background:#333;
+
+}
