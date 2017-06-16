@@ -1,5 +1,5 @@
 <?php
-$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+$page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 'home';
 ?><!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +12,11 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     <link rel="icon" href="../../favicon.ico">
 
     <title>Vis ma vie</title>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,11 +32,5 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     </div> <!-- /container -->
 
     <?php include('footer.php') ?>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>
