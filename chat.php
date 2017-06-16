@@ -7,37 +7,14 @@
             </div>
             <div class="panel-collapse" id="collapseOne">
                 <div class="panel-body">
-                    <ul class="chat">
-                        <li class="left clearfix">
-                            <span class="chat-img pull-left"><img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" /></span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">David</strong> <small class="pull-right text-muted">
-                                    <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
-                                </div>
-                                <p>Hey ! Ca va ?</p>
-                            </div>
-                        </li>
-                        <li class="right clearfix">
-                            <span class="chat-img pull-right"><img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" /></span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
-                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                    dolor, quis ullamcorper ligula sodales.</p>
-                            </div>
-                        </li>
-
-                    </ul>
+                    <ul class="chat" id ="msg"></ul>
                 </div>
                 <div class="panel-footer">
                     <div class="input-group">
-                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Saisissez votre message ici..." />
                         <span class="input-group-btn">
                             <button class="btn btn-warning btn-sm" id="btn-chat">
-                                Send</button>
+                                Envoyer</button>
                             </span>
                         </div>
                     </div>
@@ -46,6 +23,46 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+function pushMsgLeft(msg) {
+    var msg = '<li class="left clearfix">'
+        + '<span class="chat-img pull-left"><img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" /></span>'
+        + '<div class="chat-body clearfix">'
+        + '    <div class="header">'
+        + '        <strong class="primary-font">David</strong> <small class="pull-right text-muted">'
+        + '        <span class="glyphicon glyphicon-time"></span>...</small>'
+        + '    </div>'
+        + '    <p>'+msg+'</p>'
+        + '</div>'
+        + '</li>';
+    $('#msg').append(msg);
+}
+function pushMsgRight(msg) {
+    var msg = '<li class="right clearfix">'
+        + '<span class="chat-img pull-right"><img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" /></span>'
+        + '<div class="chat-body clearfix">'
+        + '    <div class="header">'
+        + '        <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>...</small>'
+        + '        <strong class="pull-right primary-font">Bhaumik Patel</strong>'
+        + '    </div>'
+        + '    <p>'+msg+'</p>'
+        + '</div>'
+        + '</li>';
+    $('#msg').append(msg);
+}
+$('#btn-chat').click(function(){
+    pushMsgRight($('#btn-input').val());
+    $('#btn-input').val('');
+});
+
+setTimeout(function() {
+    pushMsgLeft('Hey');
+    setTimeout(function() {
+        pushMsgLeft('ça va ?');
+    }, 1000);
+}, 2000);
+</script>
 
 <style type="text/css">
 .chat
