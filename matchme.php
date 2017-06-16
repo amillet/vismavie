@@ -23,6 +23,7 @@
         exit;
     }
 
+    $_SESSION['match_chat'] = false;
     $_SESSION['match'] = $match;
 ?>
 

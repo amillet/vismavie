@@ -1,4 +1,6 @@
-<!--<h1>Chat</h1>-->
+<?php
+    $_SESSION['match_chat'] = true;
+?>
 
 <div class="davidbitton">
     <p>Vous discutez avec :</p>

@@ -1,9 +1,21 @@
 <div class="container" style="padding:0;">
+<<<<<<< HEAD
 
 
     <div id="display-input" style="display:none;padding:20px;background:#ffc900;margin-top:10px;box-shadow:1px 1px 5px rgba(0,0,0,.3);">
         <img src="img/mbp.png" width="40" alt="" style="float:left;margin:0 10px 20px 0;"/>
         <b style="font-size:16px;color:#333;">17:00 !</b> Il est temps de nous dire comment se passe votre journée... <br /><span style="text-decoration:underline;">Poster un commentaire<span>
+=======
+    <?php if(!($_SESSION['match_chat'])) : ?>
+        <div id="chat-button" class="col-xs-12">
+            <a href="index.php?page=chat">
+                <img src="img/<?php echo $_SESSION['match']['image']; ?>" style="border-radius:100%; position:absolute;right:0; z-index:999; width:50px; height:50px;border:1px solid red"/>
+            </a>
+        </div>
+    <?php endif; ?>
+    <div id="display-input" style="display:none;padding: 10px;background-color:#ffc900">
+        <b>17:00 : </b> Il est temps de nous dire comment se passe votre journée
+>>>>>>> Added chat button
     </div>
 
 
@@ -72,12 +84,14 @@
 
 <script type="text/javascript">
 function displayNotification() {
-    var notification = $('#display-input');
-    notification.slideDown(300);
-    notification.click(function() {
-        $(this).remove();
-        $('#form-msg').slideDown(300);
-    });
+    if ($('#chat-button').length <= 0) {
+        var notification = $('#display-input');
+        notification.slideDown(500);
+        notification.click(function() {
+            $(this).remove();
+            $('#form-msg').slideDown(500);
+        });
+    }
 }
 
 $('#btn-submit').click(function(event) {
