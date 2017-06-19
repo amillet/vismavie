@@ -1,7 +1,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
-<h1>Je veux découvrir...</h1>
+<h1>Je veux rencontrer un(e)...</h1>
 
 <form action="index.php?page=matchme" method="post" style="text-align:center;">
     <br />
